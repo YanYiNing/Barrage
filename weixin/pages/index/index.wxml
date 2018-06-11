@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <text bindtap='request'>{{text}}</text>
+
+
+</view> -->
+
+  <scroll-view scroll-y class='msg_body'>
+
+    <view class="msg_area_left">
+      <image class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class='msg_text_left'>这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，</text>
+    </view>
+
+    <view class="msg_area_right">
+      <image class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class='msg_text_right'>这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，</text>
+    </view>
+
+    <view class="msg_area_left">
+      <image class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class='msg_text_left'>这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，</text>
+    </view>
+
+    <view class="msg_area_right">
+      <image class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class='msg_text_right'>这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，这是一条测试代码，</text>
+    </view>
+  </scroll-view>
+
+  <view class="input_body">
+    <input class="input_area" placeholder="" focus="{{focus}}" />    
+    <image src="img/send_btn.png" style="height:70rpx; width:70rpx; margin:10rpx;"></image>
+  </view>
+
+
+
+
